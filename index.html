@@ -18,22 +18,124 @@
 
 <body>
 <div id="page-container">
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <!-- Bootstrap - Navbar Brand -->
+        <span class="navbar-brand mb-0 h1"><i class="fas fa-home"></i> Portfolio</span>
+        <!-- Bootstrap - Navbar Links -->
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" id="navbarNavAltMarkup">
+            <!-- Navbar Left -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#OverMij">Over Mij</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#bewijstukken">Bewijsstukken</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Navbar Right -->
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../">Homepage</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Bootstrap - Navbar Links -->
+    </nav>
+
+
     <!-- Main Content of Page -->
     <div id="page-main">
-        <div class="container">
-            <H1 class="text-center">
-                Portfolio
-            </H1>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container text-center">
+                <h1>Welkom op mijn Portfolio!</h1>
+            </div>
         </div>
+
+        <div class="container text-center">
+            <div class="row">
+                <section class="py-4 col-12 mt-3 mb-5" id="OverMij">
+                    <h2>Wie ben ik?</h2>
+                    <hr class="divider">
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <img src="images/A_Van_Gestel_FACE_400px.JPG" alt="Afbeelding Axel Van Gestel"></div>
+                        <div class="col-md-8 col-12 text-md-left my-4">
+                            <h3 class="h4 mb-2">Axel Van Gestel</h3>
+                            <p class="text-muted mb-0">Ik ben <span class="font-weight-bold">Axel Van Gestel</span>, een
+                                student bij de IT Factory van Thomas More te Geel.<br>Mijn interesses liggen bij
+                                programmeren, namelijk <span class="font-weight-bold">Python, C# en Java</span>.<br>Naast
+                                programmeren spendeer ik mijn in tekenen, gamen, anime en random dingen op het internet
+                                op zoeken.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-12 mt-3 mb-5" id="bewijstukken">
+                    <h2 class="mb-3">Bewijsstukken</h2>
+                    <hr class="divider mb-5">
+                    <div class="row justify-content-center">
+                        <!-- ----- Bewijstukken ----- -->
+                        <!-- PC Montage -->
+                        <div class="col-lg-4 col-md-6 col-12 mb-3">
+                            <a href="bewijstukken/pcmontage.html" class="card mx-auto" style="width: 18rem;">
+                                <img class="card-img-top" src="images/card_thumbnails/pcmontage.jpg"
+                                     alt="Card image cap"
+                                     onerror="this.src='images/img_Error_Template.jpg'">
+                                <div class="card-body">
+                                    <h5 class="card-title">PC Montage</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Animi,
+                                        qui.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Python -->
+                        <div class="col-lg-4 col-md-6 col-12 mb-3">
+                            <a href="bewijstukken/python.html" class="card mx-auto" style="width: 18rem;">
+                                <img class="card-img-top" src="images/card_thumbnails/python.jpg" alt="Card image cap"
+                                     onerror="this.src='images/img_Error_Template.jpg'">
+                                <div class="card-body">
+                                    <h5 class="card-title">Python</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Animi,
+                                        qui.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12 mb-3">
+                            <a href="bewijstukken/arduino.html" class="card mx-auto" style="width: 18rem;">
+                                <img class="card-img-top" src="images/card_thumbnails/arduino.jpg" alt="Card image cap"
+                                     onerror="this.src='images/img_Error_Template.jpg'">
+                                <div class="card-body">
+                                    <h5 class="card-title">Arduino</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Animi,
+                                        qui.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
     </div>
 </div>
 
-<!-- Footer -->
-<footer id="page-footer">
+
+<footer id="page-footer" class="bg-light text-muted">
     <div class="container">
-        <p class="text-center">
-            Footer Text
-        </p>
+        <div class="row justify-content-center">
+            <div class="col-12 pt-3">
+                <p class="text-center">
+                    &copy; Van Gestel Axel - 2020
+                </p>
+            </div>
+        </div>
     </div>
 </footer>
 

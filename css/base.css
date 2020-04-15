@@ -1,0 +1,34 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css");
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    /* Responsive Images */
+    max-width: 100%;
+    height: auto;
+}
+
+.divider {
+    max-width: 4.75rem;
+    border: var(--secondary) solid 2px;
+    border-radius: 2px;
+}
+
+#OverMij img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+}
+
+#bewijstukken a {
+    text-decoration: none;
+    color: #21252A;
+    transition: 0.2s;
+}
+
+#bewijstukken a:hover {
+    box-shadow: 2px 2px 5px var(--gray);
+
+}
