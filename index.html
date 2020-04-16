@@ -30,6 +30,9 @@
                     <a class="nav-link" href="#OverMij">Over Mij</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#SkillProfile">Skills</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#bewijstukken">Bewijsstukken</a>
                 </li>
             </ul>
@@ -70,6 +73,17 @@
                                 programmeren spendeer ik mijn in tekenen, gamen, anime en random dingen op het internet
                                 op zoeken.</p>
                         </div>
+                    </div>
+                </section>
+
+                <section class="py-4 col-12 mt-3 mb-5" id="SkillProfile">
+                    <div class="row">
+                        <div class="col-md-7 col-12 text-md-right my-4">
+                            <h3 class="h4 mb-2">Skill Profile</h3>
+                            <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at consequatur culpa, facilis illo libero nam necessitatibus odio quibusdam vel? Accusantium commodi consequuntur debitis, doloremque error est eum excepturi ipsum libero, minus nihil nobis praesentium quasi quia, recusandae reiciendis rerum saepe sint sunt temporibus tenetur ullam vitae voluptas. Ipsum, quos!</p>
+                        </div>
+                        <div class="col-md-5 col-12">
+                            <div id="chart"></div></div>
                     </div>
                 </section>
 
@@ -143,6 +157,66 @@
 <script
         src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.js"
         integrity="sha256-Z1t+wxZ7Eh5T1sK6aePWMhEQOghR4jZVLwjwrUZAReE=" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<!-- Star Diagram -->
+<script>
+    const options = {
+        series: [{
+            name: 'Series 1',
+            data: [100, 75, 25, 60, 50],
+        }],
+        chart: {
+            height: 350,
+            type: 'radar',
+        },
+        dataLabels: {
+            enabled: false
+        },
+        plotOptions: {
+            radar: {
+                size: 140,
+                polygons: {
+                    strokeColor: '#e9e9e9',
+                    fill: {
+                        colors: ['#f8f8f8', '#fff']
+                    }
+                }
+            }
+        },
+        colors: ['#FF4560'],
+        markers: {
+            size: 3,
+            colors: ['#fff'],
+            strokeColor: '#FF4560',
+            strokeWidth: 2,
+        },
+        tooltip: {
+            y: {
+                formatter: function (val) {
+                    return val
+                }
+            }
+        },
+        xaxis: {
+            categories: ['APP', 'AI', 'CCS', 'IOT', 'Softskills']
+        },
+        yaxis: {
+            tickAmount: 10,
+            labels: {
+                formatter: function (val, i) {
+                    if (i % 2 === 0) {
+                        return val
+                    } else {
+                        return ''
+                    }
+                }
+            }
+        }
+    };
+
+    const chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
 </script>
 </body>
 </html>
