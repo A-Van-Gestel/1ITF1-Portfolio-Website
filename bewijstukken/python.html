@@ -19,27 +19,27 @@
 <body>
 <div id="page-container">
 
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <!-- Bootstrap - Navbar Brand -->
         <span class="navbar-brand mb-0 h1"><i class="fab fa-python"></i> Python</span>
-        <!-- Bootstrap - Navbar Links -->
-        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" id="navbarNavAltMarkup">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MainNav" aria-controls="MainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse w-100" id="MainNav">
             <!-- Navbar Left -->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#lorem">lorem</a>
+                    <a data-scroll class="nav-link" href="#lorem">lorem</a>
                 </li>
             </ul>
-        </div>
-        <!-- Navbar Right -->
-        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <!-- Navbar Right -->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="../#bewijstukken">Go Back</a>
                 </li>
             </ul>
         </div>
-        <!-- Bootstrap - Navbar Links -->
     </nav>
 
 
@@ -72,11 +72,14 @@
 </footer>
 
 <!-- JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"
-        integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.js"
-        integrity="sha256-Z1t+wxZ7Eh5T1sK6aePWMhEQOghR4jZVLwjwrUZAReE=" crossorigin="anonymous">
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js">
+</script>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+<!-- Smooth Scroll -->
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]');
 </script>
 </body>
 </html>
