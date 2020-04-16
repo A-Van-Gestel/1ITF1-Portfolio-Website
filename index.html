@@ -27,13 +27,13 @@
             <!-- Navbar Left -->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#OverMij">Over Mij</a>
+                    <a data-scroll class="nav-link" href="#OverMij">Over Mij</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#SkillProfile">Skills</a>
+                    <a data-scroll class="nav-link" href="#SkillProfile">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#bewijstukken">Bewijsstukken</a>
+                    <a data-scroll class="nav-link" href="#bewijstukken">Bewijsstukken</a>
                 </li>
             </ul>
         </div>
@@ -159,6 +159,7 @@
         integrity="sha256-Z1t+wxZ7Eh5T1sK6aePWMhEQOghR4jZVLwjwrUZAReE=" crossorigin="anonymous">
 </script>
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
 <!-- Star Diagram -->
 <script>
     const options = {
@@ -218,5 +219,10 @@
     const chart = new ApexCharts(document.querySelector("#chart"), options);
     chart.render();
 </script>
+<!-- Smooth Scroll -->
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+
 </body>
 </html>
