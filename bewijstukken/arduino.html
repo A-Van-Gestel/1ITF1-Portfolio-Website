@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../css/base.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#nav" data-offset="0">
 <div id="page-container">
 
     <nav id="nav" class="fixed-top navbar navbar-expand-md navbar-light bg-transparent bg-white-blur">
@@ -30,7 +30,10 @@
             <!-- Navbar Left -->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a data-scroll class="nav-link" href="#lorem">lorem</a>
+                    <a data-scroll class="nav-link" href="#Context">Context</a>
+                </li>
+                <li class="nav-item">
+                    <a data-scroll class="nav-link" href="#Paper">Paper</a>
                 </li>
             </ul>
             <!-- Navbar Right -->
@@ -48,16 +51,35 @@
         <header>
             <div id="Main-Jumbotron" class="jumbotron jumbotron-fluid" style="padding-top: 120px">
                 <div class="container text-center">
-                    <h1>Bewijsstuk Buiten, Arduino</h1>
+                    <h1>Arduino CO2 Meettoestel</h1>
+                    <p class="font-weight-bolder">Outside the ITFactory</p>
                 </div>
             </div>
         </header>
 
         <div class="container text-center">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, asperiores aut dolor dolorum eaque
-                earum, expedita harum illo in saepe sint, temporibus ullam vero voluptates!</p>
+            <section id="Context" class="pt-5">
+                <h2>Context</h2>
+                <hr class="divider">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img src="../images/bewijstukken/arduino_BOX.jpg" alt="Arduino CO2 Meettoestel" title="CO2 Meettoestel in Actie">
+                </div>
 
-            <embed src="../media/Arduino_GIP.pdf" type="application/pdf"/>
+                <div class="col-12 mt-3 mt-md-0 col-md-6 text-md-left">
+                    <p>Als GIP onderwerp in 6TEW had ik voor Arduino gekozen, dit was daarna verder verfijnd naar "Hoe kan je via Arduino CO2 meten?". Ik had voor dit onderwerp gekozen wegens mijn interesse in programmeren & Arduino.</p>
+                    <p>Het CO2 meettoestel is opgebouwd uit een Arduino UNO R3, DHT11 Humidity & Temperature Sensor, CCS881 CO2 Sensor, SD Card Module en een 16x2 LCD Display with i2C backplate.</p>
+                    <a href="https://github.com/A-Van-Gestel/6TEW-GIP-Arduino-CO2_meettoestel/blob/master/DHT11_LCD_SD_CCS881_Adafruit__FINAL_Button_V2/DHT11_LCD_SD_CCS881_Adafruit__FINAL_Button_V2.ino" target="_blank" class="text-body"><i class="fab fa-github"></i> Code op Github</a>
+                </div>
+
+            </div>
+            </section>
+
+            <section id="Paper" class="pt-5 mt-3 mb-5">
+                <h2>Paper voor GIP</h2>
+                <hr class="divider">
+                <embed src="../media/Arduino_GIP.pdf" type="application/pdf"/>
+            </section>
         </div>
     </div>
 </div>
