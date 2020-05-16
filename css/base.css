@@ -4,6 +4,10 @@ body {
     position: relative;
 }
 
+html {
+    /*scroll-behavior: smooth;*/
+}
+
 img {
     /* Responsive Images */
     max-width: 100%;
@@ -71,6 +75,14 @@ nav {
 }
 
 #Main-Jumbotron {
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.5)), url("../images/Header_Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: scroll;
+}
+
+.Main-Jumbotron {
     background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.5)), url("../images/Header_Background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
