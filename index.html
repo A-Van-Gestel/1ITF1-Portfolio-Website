@@ -241,7 +241,7 @@
 
                         <!-- TODO: Moment of growth -->
                         <div class="col-lg-4 col-md-6 col-12 mb-3">
-                            <a href="" class="card mx-auto" style="max-width: 18rem;">
+                            <a href="" data-toggle="modal" data-target="#Modal_Growth" class="card mx-auto" style="max-width: 18rem;">
                                 <img class="card-img-top" src="images/card_thumbnails/growth.jpg" alt="Card image cap"
                                      onerror="this.src='images/img_Error_Template.jpg'">
                                 <div class="card-body">
@@ -252,10 +252,60 @@
                                 </div>
                             </a>
                         </div>
+                        <div class="modal fade" id="Modal_Growth" tabindex="-1" role="dialog" aria-labelledby="Modal_GrowthLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="Modal_GrowthLabel">CO2 Meettoestel</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <header>
+                                            <div class="Main-Jumbotron jumbotron jumbotron-fluid" style="padding-top: 120px">
+                                                <div class="container text-center">
+                                                    <h1>Arduino CO2 Meettoestel</h1>
+                                                    <p class="font-weight-bolder">Outside the ITFactory</p>
+                                                </div>
+                                            </div>
+                                        </header>
+
+                                        <div class="container text-center">
+                                            <section>
+                                                <h2>Context</h2>
+                                                <hr class="divider">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6">
+                                                        <img src="images/bewijstukken/arduino_BOX.jpg" alt="Arduino CO2 Meettoestel" title="CO2 Meettoestel in Actie">
+                                                    </div>
+
+                                                    <div class="col-12 mt-3 mt-md-0 col-md-6 text-md-left">
+                                                        <p>Als GIP onderwerp in 6TEW had ik voor Arduino gekozen, dit was daarna verder verfijnd naar "Hoe kan je via Arduino CO2 meten?". Ik had voor dit onderwerp gekozen wegens mijn interesse in programmeren & Arduino.</p>
+                                                        <p>Het CO2 meettoestel is opgebouwd uit een Arduino UNO R3, DHT11 Humidity & Temperature Sensor, CCS881 CO2 Sensor, SD Card Module en een 16x2 LCD Display with i2C backplate.</p>
+                                                        <a href="https://github.com/A-Van-Gestel/6TEW-GIP-Arduino-CO2_meettoestel/blob/master/DHT11_LCD_SD_CCS881_Adafruit__FINAL_Button_V2/DHT11_LCD_SD_CCS881_Adafruit__FINAL_Button_V2.ino" target="_blank" class="text-body"><i class="fab fa-github"></i> Code op Github</a>
+                                                    </div>
+
+                                                </div>
+                                            </section>
+
+                                            <section class="pt-5 mt-3 mb-5">
+                                                <h2>Paper voor GIP</h2>
+                                                <hr class="divider">
+                                                <embed src="media/Arduino_GIP.pdf" type="application/pdf"/>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         <!-- TODO: Co-creation -->
                         <div class="col-lg-4 col-md-6 col-12 mb-3">
-                            <a href="" class="card mx-auto" style="max-width: 18rem;">
+                            <a href="" data-toggle="modal" data-target="#Modal_Co-Creation" class="card mx-auto" style="max-width: 18rem;">
                                 <img class="card-img-top" src="images/card_thumbnails/co-creation.jpg" alt="Card image cap"
                                      onerror="this.src='images/img_Error_Template.jpg'">
                                 <div class="card-body">
@@ -266,10 +316,60 @@
                                 </div>
                             </a>
                         </div>
+                        <div class="modal fade" id="Modal_Co-Creation" tabindex="-1" role="dialog" aria-labelledby="Modal_Co-CreationLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="Modal_Co-CreationLabel">CO2 Meettoestel</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <header>
+                                            <div class="Main-Jumbotron jumbotron jumbotron-fluid" style="padding-top: 120px">
+                                                <div class="container text-center">
+                                                    <h1>Arduino CO2 Meettoestel</h1>
+                                                    <p class="font-weight-bolder">Outside the ITFactory</p>
+                                                </div>
+                                            </div>
+                                        </header>
+
+                                        <div class="container text-center">
+                                            <section>
+                                                <h2>Context</h2>
+                                                <hr class="divider">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6">
+                                                        <img src="images/bewijstukken/arduino_BOX.jpg" alt="Arduino CO2 Meettoestel" title="CO2 Meettoestel in Actie">
+                                                    </div>
+
+                                                    <div class="col-12 mt-3 mt-md-0 col-md-6 text-md-left">
+                                                        <p>Als GIP onderwerp in 6TEW had ik voor Arduino gekozen, dit was daarna verder verfijnd naar "Hoe kan je via Arduino CO2 meten?". Ik had voor dit onderwerp gekozen wegens mijn interesse in programmeren & Arduino.</p>
+                                                        <p>Het CO2 meettoestel is opgebouwd uit een Arduino UNO R3, DHT11 Humidity & Temperature Sensor, CCS881 CO2 Sensor, SD Card Module en een 16x2 LCD Display with i2C backplate.</p>
+                                                        <a href="https://github.com/A-Van-Gestel/6TEW-GIP-Arduino-CO2_meettoestel/blob/master/DHT11_LCD_SD_CCS881_Adafruit__FINAL_Button_V2/DHT11_LCD_SD_CCS881_Adafruit__FINAL_Button_V2.ino" target="_blank" class="text-body"><i class="fab fa-github"></i> Code op Github</a>
+                                                    </div>
+
+                                                </div>
+                                            </section>
+
+                                            <section class="pt-5 mt-3 mb-5">
+                                                <h2>Paper voor GIP</h2>
+                                                <hr class="divider">
+                                                <embed src="media/Arduino_GIP.pdf" type="application/pdf"/>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         <!-- TODO: Globalise -->
                         <div class="col-lg-4 col-md-6 col-12 mb-3">
-                            <a href="" class="card mx-auto" style="max-width: 18rem;">
+                            <a href="" data-toggle="modal" data-target="#Modal_Globalise" class="card mx-auto" style="max-width: 18rem;">
                                 <img class="card-img-top" src="images/card_thumbnails/globalise.jpg" alt="Card image cap"
                                      onerror="this.src='images/img_Error_Template.jpg'">
                                 <div class="card-body">
@@ -279,6 +379,56 @@
                                         qui.</p>
                                 </div>
                             </a>
+                        </div>
+                        <div class="modal fade" id="Modal_Globalise" tabindex="-1" role="dialog" aria-labelledby="Modal_GlobaliseLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="Modal_GlobaliseLabel">CO2 Meettoestel</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <header>
+                                            <div class="Main-Jumbotron jumbotron jumbotron-fluid" style="padding-top: 120px">
+                                                <div class="container text-center">
+                                                    <h1>Arduino CO2 Meettoestel</h1>
+                                                    <p class="font-weight-bolder">Outside the ITFactory</p>
+                                                </div>
+                                            </div>
+                                        </header>
+
+                                        <div class="container text-center">
+                                            <section>
+                                                <h2>Context</h2>
+                                                <hr class="divider">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6">
+                                                        <img src="images/bewijstukken/arduino_BOX.jpg" alt="Arduino CO2 Meettoestel" title="CO2 Meettoestel in Actie">
+                                                    </div>
+
+                                                    <div class="col-12 mt-3 mt-md-0 col-md-6 text-md-left">
+                                                        <p>Als GIP onderwerp in 6TEW had ik voor Arduino gekozen, dit was daarna verder verfijnd naar "Hoe kan je via Arduino CO2 meten?". Ik had voor dit onderwerp gekozen wegens mijn interesse in programmeren & Arduino.</p>
+                                                        <p>Het CO2 meettoestel is opgebouwd uit een Arduino UNO R3, DHT11 Humidity & Temperature Sensor, CCS881 CO2 Sensor, SD Card Module en een 16x2 LCD Display with i2C backplate.</p>
+                                                        <a href="https://github.com/A-Van-Gestel/6TEW-GIP-Arduino-CO2_meettoestel/blob/master/DHT11_LCD_SD_CCS881_Adafruit__FINAL_Button_V2/DHT11_LCD_SD_CCS881_Adafruit__FINAL_Button_V2.ino" target="_blank" class="text-body"><i class="fab fa-github"></i> Code op Github</a>
+                                                    </div>
+
+                                                </div>
+                                            </section>
+
+                                            <section class="pt-5 mt-3 mb-5">
+                                                <h2>Paper voor GIP</h2>
+                                                <hr class="divider">
+                                                <embed src="media/Arduino_GIP.pdf" type="application/pdf"/>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- TODO: 2 exhibits on what you did here -->
@@ -405,7 +555,7 @@
 
                         <!-- TODO: 2 non-technical exhibits -->
                         <div class="col-lg-4 col-md-6 col-12 mb-3">
-                            <a href="" class="card mx-auto" style="max-width: 18rem;">
+                            <a href="" data-toggle="modal" data-target="#Modal_Non-Technical_1" class="card mx-auto" style="max-width: 18rem;">
                                 <img class="card-img-top" src="images/card_thumbnails/non-technical-1.jpg" alt="Card image cap"
                                      onerror="this.src='images/img_Error_Template.jpg'">
                                 <div class="card-body">
@@ -416,8 +566,59 @@
                                 </div>
                             </a>
                         </div>
+                        <div class="modal fade" id="Modal_Non-Technical_1" tabindex="-1" role="dialog" aria-labelledby="Modal_Non-Technical_1Label" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="Modal_Non-Technical_1Label">CO2 Meettoestel</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <header>
+                                            <div class="Main-Jumbotron jumbotron jumbotron-fluid" style="padding-top: 120px">
+                                                <div class="container text-center">
+                                                    <h1>Arduino CO2 Meettoestel</h1>
+                                                    <p class="font-weight-bolder">Outside the ITFactory</p>
+                                                </div>
+                                            </div>
+                                        </header>
+
+                                        <div class="container text-center">
+                                            <section>
+                                                <h2>Context</h2>
+                                                <hr class="divider">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6">
+                                                        <img src="images/bewijstukken/arduino_BOX.jpg" alt="Arduino CO2 Meettoestel" title="CO2 Meettoestel in Actie">
+                                                    </div>
+
+                                                    <div class="col-12 mt-3 mt-md-0 col-md-6 text-md-left">
+                                                        <p>Als GIP onderwerp in 6TEW had ik voor Arduino gekozen, dit was daarna verder verfijnd naar "Hoe kan je via Arduino CO2 meten?". Ik had voor dit onderwerp gekozen wegens mijn interesse in programmeren & Arduino.</p>
+                                                        <p>Het CO2 meettoestel is opgebouwd uit een Arduino UNO R3, DHT11 Humidity & Temperature Sensor, CCS881 CO2 Sensor, SD Card Module en een 16x2 LCD Display with i2C backplate.</p>
+                                                        <a href="https://github.com/A-Van-Gestel/6TEW-GIP-Arduino-CO2_meettoestel/blob/master/DHT11_LCD_SD_CCS881_Adafruit__FINAL_Button_V2/DHT11_LCD_SD_CCS881_Adafruit__FINAL_Button_V2.ino" target="_blank" class="text-body"><i class="fab fa-github"></i> Code op Github</a>
+                                                    </div>
+
+                                                </div>
+                                            </section>
+
+                                            <section class="pt-5 mt-3 mb-5">
+                                                <h2>Paper voor GIP</h2>
+                                                <hr class="divider">
+                                                <embed src="media/Arduino_GIP.pdf" type="application/pdf"/>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="col-lg-4 col-md-6 col-12 mb-3">
-                            <a href="" class="card mx-auto" style="max-width: 18rem;">
+                            <a href="" data-toggle="modal" data-target="#Modal_Non-Technical_2" class="card mx-auto" style="max-width: 18rem;">
                                 <img class="card-img-top" src="images/card_thumbnails/non-technical-2.jpg" alt="Card image cap"
                                      onerror="this.src='images/img_Error_Template.jpg'">
                                 <div class="card-body">
@@ -427,6 +628,56 @@
                                         qui.</p>
                                 </div>
                             </a>
+                        </div>
+                        <div class="modal fade" id="Modal_Non-Technical_2" tabindex="-1" role="dialog" aria-labelledby="Modal_Non-Technical_2Label" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="Modal_Non-Technical_2Label">CO2 Meettoestel</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <header>
+                                            <div class="Main-Jumbotron jumbotron jumbotron-fluid" style="padding-top: 120px">
+                                                <div class="container text-center">
+                                                    <h1>Arduino CO2 Meettoestel</h1>
+                                                    <p class="font-weight-bolder">Outside the ITFactory</p>
+                                                </div>
+                                            </div>
+                                        </header>
+
+                                        <div class="container text-center">
+                                            <section>
+                                                <h2>Context</h2>
+                                                <hr class="divider">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6">
+                                                        <img src="images/bewijstukken/arduino_BOX.jpg" alt="Arduino CO2 Meettoestel" title="CO2 Meettoestel in Actie">
+                                                    </div>
+
+                                                    <div class="col-12 mt-3 mt-md-0 col-md-6 text-md-left">
+                                                        <p>Als GIP onderwerp in 6TEW had ik voor Arduino gekozen, dit was daarna verder verfijnd naar "Hoe kan je via Arduino CO2 meten?". Ik had voor dit onderwerp gekozen wegens mijn interesse in programmeren & Arduino.</p>
+                                                        <p>Het CO2 meettoestel is opgebouwd uit een Arduino UNO R3, DHT11 Humidity & Temperature Sensor, CCS881 CO2 Sensor, SD Card Module en een 16x2 LCD Display with i2C backplate.</p>
+                                                        <a href="https://github.com/A-Van-Gestel/6TEW-GIP-Arduino-CO2_meettoestel/blob/master/DHT11_LCD_SD_CCS881_Adafruit__FINAL_Button_V2/DHT11_LCD_SD_CCS881_Adafruit__FINAL_Button_V2.ino" target="_blank" class="text-body"><i class="fab fa-github"></i> Code op Github</a>
+                                                    </div>
+
+                                                </div>
+                                            </section>
+
+                                            <section class="pt-5 mt-3 mb-5">
+                                                <h2>Paper voor GIP</h2>
+                                                <hr class="divider">
+                                                <embed src="media/Arduino_GIP.pdf" type="application/pdf"/>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
