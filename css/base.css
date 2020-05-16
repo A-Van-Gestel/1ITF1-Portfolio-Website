@@ -89,3 +89,11 @@ nav {
     background-position: bottom;
     background-attachment: scroll;
 }
+
+footer i {
+    font-size: xx-large;
+}
+
+footer a:hover {
+    color: black !important;
+}
