@@ -82,6 +82,14 @@ nav {
     background-attachment: scroll;
 }
 
+.modal-body a {
+    box-shadow: none !important;
+}
+
+.modal-body a:hover {
+    text-decoration: underline !important;
+}
+
 footer i {
     font-size: xx-large;
 }
